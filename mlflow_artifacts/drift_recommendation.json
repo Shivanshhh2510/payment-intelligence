@@ -1,0 +1,15 @@
+{
+  "should_retrain": true,
+  "high_psi_features": [
+    "V258",
+    "dow_cos",
+    "card6",
+    "V225",
+    "dow_sin"
+  ],
+  "n_high_psi_features": 5,
+  "auc_degradation": 0.0137,
+  "fraud_rate_shift_pct": 31.7,
+  "recommendation": "RETRAIN",
+  "reason": "PSI > 0.20 on 5 features: ['V258', 'dow_cos', 'card6', 'V225', 'dow_sin']. AUC degradation: 0.0137. Fraud rate shift: 31.7%."
+}

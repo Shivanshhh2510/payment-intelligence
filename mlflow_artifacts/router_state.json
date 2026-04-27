@@ -1,0 +1,186 @@
+{
+  "UPI": {
+    "Razorpay": {
+      "alpha": 1587.0,
+      "beta": 260.0,
+      "posterior_mean": 0.8592,
+      "credible_interval_95": [
+        0.843,
+        0.8747
+      ],
+      "n_trials": 1845,
+      "true_rate": 0.94
+    },
+    "PayU": {
+      "alpha": 35.0,
+      "beta": 16.0,
+      "posterior_mean": 0.6863,
+      "credible_interval_95": [
+        0.5539,
+        0.8048
+      ],
+      "n_trials": 49,
+      "true_rate": 0.78
+    },
+    "Stripe": {
+      "alpha": 14.0,
+      "beta": 9.0,
+      "posterior_mean": 0.6087,
+      "credible_interval_95": [
+        0.4066,
+        0.7929
+      ],
+      "n_trials": 21,
+      "true_rate": 0.65
+    },
+    "CCAvenue": {
+      "alpha": 522.0,
+      "beta": 95.0,
+      "posterior_mean": 0.846,
+      "credible_interval_95": [
+        0.8165,
+        0.8734
+      ],
+      "n_trials": 615,
+      "true_rate": 0.81
+    }
+  },
+  "CARD": {
+    "Razorpay": {
+      "alpha": 90.0,
+      "beta": 12.0,
+      "posterior_mean": 0.8824,
+      "credible_interval_95": [
+        0.8135,
+        0.9371
+      ],
+      "n_trials": 100,
+      "true_rate": 0.87
+    },
+    "PayU": {
+      "alpha": 94.0,
+      "beta": 14.0,
+      "posterior_mean": 0.8704,
+      "credible_interval_95": [
+        0.8012,
+        0.9266
+      ],
+      "n_trials": 106,
+      "true_rate": 0.91
+    },
+    "Stripe": {
+      "alpha": 2154.0,
+      "beta": 128.0,
+      "posterior_mean": 0.9439,
+      "credible_interval_95": [
+        0.9341,
+        0.953
+      ],
+      "n_trials": 2280,
+      "true_rate": 0.95
+    },
+    "CCAvenue": {
+      "alpha": 12.0,
+      "beta": 6.0,
+      "posterior_mean": 0.6667,
+      "credible_interval_95": [
+        0.4404,
+        0.8579
+      ],
+      "n_trials": 16,
+      "true_rate": 0.79
+    }
+  },
+  "NETBANKING": {
+    "Razorpay": {
+      "alpha": 31.0,
+      "beta": 8.0,
+      "posterior_mean": 0.7949,
+      "credible_interval_95": [
+        0.6567,
+        0.9045
+      ],
+      "n_trials": 37,
+      "true_rate": 0.83
+    },
+    "PayU": {
+      "alpha": 326.0,
+      "beta": 34.0,
+      "posterior_mean": 0.9056,
+      "credible_interval_95": [
+        0.8733,
+        0.9335
+      ],
+      "n_trials": 358,
+      "true_rate": 0.88
+    },
+    "Stripe": {
+      "alpha": 9.0,
+      "beta": 5.0,
+      "posterior_mean": 0.6429,
+      "credible_interval_95": [
+        0.3857,
+        0.8614
+      ],
+      "n_trials": 12,
+      "true_rate": 0.71
+    },
+    "CCAvenue": {
+      "alpha": 1851.0,
+      "beta": 162.0,
+      "posterior_mean": 0.9195,
+      "credible_interval_95": [
+        0.9073,
+        0.931
+      ],
+      "n_trials": 2011,
+      "true_rate": 0.92
+    }
+  },
+  "WALLET": {
+    "Razorpay": {
+      "alpha": 1941.0,
+      "beta": 187.0,
+      "posterior_mean": 0.9121,
+      "credible_interval_95": [
+        0.8997,
+        0.9238
+      ],
+      "n_trials": 2126,
+      "true_rate": 0.91
+    },
+    "PayU": {
+      "alpha": 19.0,
+      "beta": 9.0,
+      "posterior_mean": 0.6786,
+      "credible_interval_95": [
+        0.4982,
+        0.8348
+      ],
+      "n_trials": 26,
+      "true_rate": 0.72
+    },
+    "Stripe": {
+      "alpha": 95.0,
+      "beta": 21.0,
+      "posterior_mean": 0.819,
+      "credible_interval_95": [
+        0.7443,
+        0.8833
+      ],
+      "n_trials": 114,
+      "true_rate": 0.82
+    },
+    "CCAvenue": {
+      "alpha": 253.0,
+      "beta": 33.0,
+      "posterior_mean": 0.8846,
+      "credible_interval_95": [
+        0.8452,
+        0.9189
+      ],
+      "n_trials": 284,
+      "true_rate": 0.88
+    }
+  }
+}

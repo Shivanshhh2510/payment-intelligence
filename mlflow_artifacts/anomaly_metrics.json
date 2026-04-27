@@ -1,0 +1,8 @@
+{
+  "iso_auc": 0.7613,
+  "iso_ap": 0.0933,
+  "iso_f1": 0.1919,
+  "iso_precision": 0.1211,
+  "iso_recall": 0.4616,
+  "novel_fraud_caught": 718
+}

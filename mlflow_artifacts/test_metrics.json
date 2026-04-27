@@ -1,0 +1,1 @@
+{"val_auc": 0.8704, "val_f1": 0.4638, "test_auc": 0.8763, "test_f1": 0.462, "test_precision": 0.591, "test_recall": 0.3792, "test_ap": 0.4627, "threshold": 0.4099999999999998}

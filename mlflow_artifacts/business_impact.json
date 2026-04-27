@@ -1,0 +1,20 @@
+{
+  "tp": 965,
+  "fp": 395,
+  "fn": 2118,
+  "tn": 85103,
+  "fraud_caught": 965,
+  "fraud_missed": 2118,
+  "legitimate_blocked": 395,
+  "cost_false_positives_inr": 474000,
+  "cost_false_negatives_inr": 5083200,
+  "cost_manual_review_inr": 272000,
+  "baseline_total_fraud_cost_inr": 7399200,
+  "fraud_value_prevented_inr": 2316000,
+  "net_benefit_inr": 1570000,
+  "roi_percent": 21.2,
+  "threshold_used": 0.4099999999999998,
+  "brier_raw": 0.0262,
+  "brier_cal": 0.0243,
+  "business_optimal_threshold": 0.43
+}

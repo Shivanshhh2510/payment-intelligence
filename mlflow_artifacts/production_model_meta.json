@@ -1,0 +1,5 @@
+{
+  "production_version": 1,
+  "model_name": "fraud-detection-xgboost",
+  "tracking_uri": "mlruns"
+}
