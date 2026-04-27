@@ -145,6 +145,9 @@ At the optimal threshold (0.41), the system produces **₹15.7L net benefit** on
 
 <img width="1568" height="316" alt="image" src="https://github.com/user-attachments/assets/64923150-2fe9-4df5-84c7-7b500011f06c" />
 
+<img width="1878" height="585" alt="image" src="https://github.com/user-attachments/assets/067e4f98-be9f-42a2-8ab7-03504e6b6185" />
+
+
 
 
 
