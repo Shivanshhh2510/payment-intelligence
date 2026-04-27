@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg:        #0a0f1e;
+  --surface:   #0f1629;
+  --surface-2: #131d35;
+  --border:    #1e2d4a;
+  --border-2:  #243659;
+  --accent:    #6366f1;
+  --accent-dim:#3730a3;
+  --green:     #10b981;
+  --green-dim: #064e3b;
+  --orange:    #f59e0b;
+  --red:       #f43f5e;
+  --text-1:    #f0f4ff;
+  --text-2:    #94a3b8;
+  --text-3:    #4a6080;
+  --mono:      'Fira Code', 'Consolas', monospace;
+  --radius:    10px;
+  --shadow:    0 8px 32px rgba(0,0,0,0.4);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body {
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  height: 100%;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: var(--border-2); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--text-3); }
+
+/* ── Animations ──────────────────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+@keyframes pulse-dot {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50%       { opacity: 0.3; transform: scale(0.8); }
+}
+@keyframes glow {
+  0%, 100% { box-shadow: 0 0 12px rgba(99,102,241,0.15); }
+  50%       { box-shadow: 0 0 24px rgba(99,102,241,0.35); }
+}
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.fade-up   { animation: fadeUp  0.3s cubic-bezier(0.16,1,0.3,1) forwards; }
+.fade-in   { animation: fadeIn  0.2s ease forwards; }
+
+/* ── Typing dots ─────────────────────────────────────────────── */
+.typing-dot {
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: var(--text-3);
+  animation: pulse-dot 1.2s ease infinite;
+}
+.typing-dot:nth-child(2) { animation-delay: 0.2s; }
+.typing-dot:nth-child(3) { animation-delay: 0.4s; }
+
+/* ── Toast ───────────────────────────────────────────────────── */
+.toast {
+  position: fixed;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 500;
+  z-index: 1000;
+  animation: fadeUp 0.25s ease;
+  pointer-events: none;
+  white-space: nowrap;
+  backdrop-filter: blur(12px);
+}
+.toast-success { background: rgba(16,185,129,0.15); border: 1px solid #10b981; color: #10b981; }
+.toast-error   { background: rgba(244,63,94,0.15);  border: 1px solid #f43f5e; color: #f43f5e; }
+.toast-info    { background: rgba(99,102,241,0.15); border: 1px solid #6366f1; color: #a5b4fc; }
+
+/* ── Suggestion chips ────────────────────────────────────────── */
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border-2);
+  background: var(--surface-2);
+  color: var(--text-2);
+  font-size: 12px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: inherit;
+  white-space: nowrap;
+}
+.chip:hover {
+  border-color: var(--accent);
+  color: var(--text-1);
+  background: rgba(99,102,241,0.08);
+}
+
+/* ── Risk colors ─────────────────────────────────────────────── */
+.risk-low      { color: var(--green); }
+.risk-medium   { color: var(--orange); }
+.risk-high     { color: var(--red); }
+.risk-critical { color: #e11d48; }
+
+/* ── Badges ──────────────────────────────────────────────────── */
+.badge {
+  display: inline-flex; align-items: center;
+  border-radius: 20px; padding: 3px 12px;
+  font-size: 11px; font-weight: 600;
+  letter-spacing: 0.5px; text-transform: uppercase;
+}
+.badge-allow  { background: rgba(16,185,129,0.12); color: #10b981; border: 1px solid rgba(16,185,129,0.3); }
+.badge-review { background: rgba(245,158,11,0.12); color: #f59e0b; border: 1px solid rgba(245,158,11,0.3); }
+.badge-block  { background: rgba(244,63,94,0.12);  color: #f43f5e; border: 1px solid rgba(244,63,94,0.3); }
+
+/* ── Skeleton shimmer ────────────────────────────────────────── */
+.skeleton {
+  background: linear-gradient(90deg, var(--surface-2) 25%, var(--border) 50%, var(--surface-2) 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  border-radius: 6px;
+}
