@@ -135,6 +135,22 @@ At the optimal threshold (0.41), the system produces **₹15.7L net benefit** on
 
 ---
 
+## Platform Performance:
+
+<img width="1568" height="759" alt="image" src="https://github.com/user-attachments/assets/e4ec3740-315d-4195-8b50-02374d92db6b" />
+
+<img width="1568" height="476" alt="image" src="https://github.com/user-attachments/assets/f440cf4d-30e9-41a4-9519-2ae298142777" />
+
+<img width="1568" height="518" alt="image" src="https://github.com/user-attachments/assets/450c3b35-81d3-4f09-8470-9c0b73952c93" />
+
+<img width="1568" height="316" alt="image" src="https://github.com/user-attachments/assets/64923150-2fe9-4df5-84c7-7b500011f06c" />
+
+
+
+
+
+
+
 ## Tech Stack
 
 | Layer | Technology |
